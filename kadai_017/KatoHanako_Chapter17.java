@@ -6,7 +6,7 @@ public class KatoHanako_Chapter17 extends Kato_Chapter17{
 		givenName = "花子";
 	
 	}
-	public static void eachIntroduce() {
+	public void eachIntroduce() {
 		System.out.println("趣味は読書です");
 	}
 }

@@ -2,22 +2,23 @@ package kadai_017;
 
 public abstract class Kato_Chapter17 {
 	
-	public static String familyName ="加藤";
+	public  String familyName ="加藤";
 	
-	public static String givenName ;
+	public  String givenName ="";
 	
-	public static String address ="住所は東京都中野区◯×です" ;
+	public  String address ="東京都中野区◯×";
 	
-	public static void commonIntroduce(){
-		System.out.println(address);
-		System.out .println ("　");
-	}
-	static void eachIntroduce(){	
+	public void commonIntroduce(){
+		System.out.println("名前は"+ this.familyName + this.givenName + "です");
+		System.out.println("住所は"+ this.address + "です");
 	}
 	
-	public static void execIntroduce() {
-		System.out.println("名前は" + familyName + givenName +"です");
-		
+	abstract public void eachIntroduce();
+	
+	public void execIntroduce() {
+		this.commonIntroduce();
+		this.eachIntroduce();
+		System.out.println("");
 		}
 
 }
